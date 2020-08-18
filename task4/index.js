@@ -1,6 +1,8 @@
-
+const resultPlace = document.getElementById("firstDiv");
+const btn = document.getElementById("btn");
+  
 btn.addEventListener("click",function(event){
-  const resultPlace = document.getElementById("firstDiv");
+  // const resultPlace = document.getElementById("firstDiv");
   resultPlace.innerHTML = "";
   const width = parseInt(document.querySelector('#elem1').value, 10);
   const height = parseInt(document.querySelector('#elem2').value, 10);
@@ -23,8 +25,11 @@ function fetchPhoto(width, height) {
 }
 
 function displayPhoto(photoUrl) {
-  const resultPlace = document.getElementById("firstDiv");
+  // const resultPlace = document.getElementById("firstDiv");
   resultPlace.innerHTML = '<img src="'+photoUrl+'">';
 }
 
 // const displayPhotos2 = photosData => console.log(photosData)
+
+
+// Здесь тоже всё верно, но есть аналогичные замечания, как и в 3-м задании. Код выше исправила
